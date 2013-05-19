@@ -1,0 +1,30 @@
+{
+  "name": "hackapp",
+  "version": "0.0.0",
+  "description": "Team Green",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jmanero/hackapp.git"
+  },
+  "author": "Dyn Hackademy",
+  "contributors" : [ {
+  	"name" : "Bobby Galli",
+  	"email" : "bobbyg603@gmail.com"
+  }, {
+  	"name" : "Duke Atkinson",
+  	"email" : "ekud91@gmail.com"
+  }, {
+  	"name" : "Jon Cattel",
+  	"email" : "cattelj@wit.edu"
+  } ],
+  "dependencies" : {
+  	"mongoose" : "3.6.x",
+  	"express" : "3.2.x",
+  	"ejs" : "0.8.x"
+  },
+  "license": "MIT",
+  "repository" : {
+  	"type" : "git",
+  	"url" : "git://github.com/jmanero/hackapp.git"
+  }
+}
