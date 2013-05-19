@@ -27,8 +27,10 @@ app.engine('html', EJS.renderFile);
 app.set('views', Path.resolve(__dirname, "../view"));
 app.use(Express.bodyParser());
 app.use(Express.methodOverride('method'));
-
-// app.use(app.router);
+app.use(Express.cookieParser("afa8s7dfoasdfm"));
+app.use(Express.cookieSession());
+app.use(app.router);
+app.use(Express['static'](Path.resolve(__dirname, '../static')))
 
 ccUser.create(app);
 ccView.create(app);

@@ -4,6 +4,9 @@
 </head>
 
 <div id="weekContainer" class="weekContainer">
+<% if(session.user) { -%>
+<div>Logged in as <%= session.user.name %>&nbsp;<a href="/logout">Logout</a></div>
+<% } -%>
 <center>
 <table id="week">
 <thead>
