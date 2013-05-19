@@ -10,30 +10,22 @@
 		<center>
 		<br/><br/>
 		<h2>Enter the Following:</h2>
-			<!--<form name="input" action="" method="get">-->
+			<form name="input" method="post" action="/user" >
 			Email: &nbsp &nbsp &nbsp <input id="email" type="text" name="email"><br/>
 			Password: <input id="password" type="text" name="password"><br/>
 			<br/>
-			<input type="submit" value="Submit" onclick="pass()">
-			<!--</form>-->
+			<input type="submit" value="Submit">
+			</form>
 		</center>
 	</div>
 	
 <script>
 	function pass(){
 	
-	if(verify()){
-	
+	if(verify()){	
 	var email = document.getElementById("email").value;
 	var password = document.getElementById("password").value;
-	var id = makeid();
-	
-	var JSONObject={
-	"email": email,
-	"password": password,
-	"id": id;
-	}
-	
+	//var id = makeid();
 	}
 	else alert("Error!");
 }
