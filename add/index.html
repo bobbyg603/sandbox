@@ -10,13 +10,45 @@
 		<center>
 		<br/><br/>
 		<h2>Enter the Following:</h2>
-			<form name="input" action="" method="get">
-			Email: &nbsp &nbsp &nbsp <input type="text" name="email"><br/>
-			Password: <input type="text" name="password"><br/>
+			<!--<form name="input" action="" method="get">-->
+			Email: &nbsp &nbsp &nbsp <input id="email" type="text" name="email"><br/>
+			Password: <input id="password" type="text" name="password"><br/>
 			<br/>
-			<input type="submit" value="Submit">
-			</form> 
+			<input type="submit" value="Submit" onclick="pass()">
+			<!--</form>-->
 		</center>
 	</div>
+	
+<script>
+function pass(){
+	
+	if(verify()){
+
+
+	var email = document.getElementById("email").value;
+	var password = document.getElementById("password").value;
+	var id = makeid();
+	
+	//alert("Email: " + email + " Password: " + password + " ID: " + id);
+	}
+	else alert("Error!");
+}
+
+function makeid()
+{
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for( var i=0; i < 5; i++ )
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
+}
+
+function verify()
+{
+	return true;
+}
+</script>
 </body>
 </html>
