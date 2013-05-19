@@ -1,0 +1,104 @@
+<html>
+<head>
+<style>
+td{
+	height:75px;
+	width:75px;
+	border:1px solid black;
+}
+.date{
+	position:relative;
+	top:-25px;
+}
+.monthTitle{
+	padding-bottom:20px;
+	font-size:36px;
+	font-style:bold;
+}
+</style>
+</head>
+<div id="monthContainer" class="monthContainer" style="border:3px solid black;width:600px;padding-bottom:20px;padding-top:20px;">
+<center>
+<table id="month">
+<thead>
+<tr>
+
+<span class="monthTitle">May</span>
+
+</tr>
+<tr>
+<th class="weekend">Sunday</th>
+<th>Monday</th>
+<th>Tuesday</th>
+<th>Wednesday</th>
+<th>Thursday</th>
+<th>Friday</th>
+<th class="weekend">Saturday</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="previous weekend"><span class="date" id="day1"></span><div class="day"></div></td>
+<td class="previous"><span class="date" id="day2"></span><div class="day"></div></td>
+<td><span class="date" id="day3"></span><div class="day"></div></td>
+<td><span class="date" id="day4"></span><div class="day"></div></td>
+<td><span class="date" id="day5"></span><div class="day"></div></td>
+<td><span class="date" id="day6"></span><div class="day"></div></td>
+<td class="weekend">
+<span class="date" id="day7"></span><div class="day"></div></td>
+</tr><tr>
+<td class="weekend">
+<span class="date" id="day8"></span><div class="day"></div></td>
+<td><span class="date" id="day9"></span><div class="day"></div></td>
+<td><span class="date" id="day10"></span><div class="day"></div></td>
+<td><span class="date" id="day11"></span><div class="day"></div></td>
+<td><span class="date" id="day12"></span><div class="day"></div></td>
+<td><span class="date" id="day13"></span><div class="day"></div></td>
+<td class="weekend">
+<span class="date" id="day14"></span><div class="day"></div></td>
+</tr><tr>
+<td class="weekend">
+<span class="date" id="day15"></span><div class="day"></div></td>
+<td><span class="date" id="day16"></span><div class="day"></div></td>
+<td><span class="date" id="day17"></span><div class="day"></div></td>
+<td><span class="date" id="day18"></span><div class="day"></div></td>
+<td><span class="date" id="day19"></span><div class="day"></div></td>
+<td><span class="date" id="day20"></span><div class="day"></div></td>
+<td class="weekend">
+<span class="date" id="day21"></span><div class="day"></div></td>
+</tr><tr>
+<td class="weekend"><span class="date" id="day22"></span><div class="day"></div></td>
+<td><span class="date" id="day23"></span><div class="day"></div></td>
+<td><span class="date" id="day24"></span><div class="day"></div></td>
+<td><span class="date" id="day25"></span><div class="day"></div></td>
+<td><span class="date" id="day26"></span><div class="day"></div></td>
+<td><span class="date" id="day27"></span><div class="day"></div></td>
+<td class="weekend"><span class="date" id="day28"></span><div class="day"></div></td>
+</tr><tr>
+<td class="weekend"><span class="date" id="day29"></span><div class="day"></div></td>
+<td><span class="date" id="day30"></span><div class="day"></div></td>
+<td><span class="date" id="day31"></span><div class="day"></div></td>
+<td><span class="date" id="day32"></span><div class="day"></div></td>
+<td><span class="date" id="day33"></span><div class="day"></div></td>
+<td class="next"><span class="date" id="day34"></span><div class="day"></div></td>
+<td class="weekend next"><span class="date" id="day35"></span><div class="day"></div></td>
+</tr>
+</tbody>
+</table>
+</center>
+</div>
+<script>
+
+//Start day for example month
+var j = 4;
+
+for(var i = 1; i<(31); i++)
+{
+var change = document.getElementById('day'+j);
+j++;
+change.innerHTML = i; //will need to be changed
+}
+
+</script>
+
+</html>
