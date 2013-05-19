@@ -20,16 +20,20 @@
 	</div>
 	
 <script>
-function pass(){
+	function pass(){
 	
 	if(verify()){
-
-
+	
 	var email = document.getElementById("email").value;
 	var password = document.getElementById("password").value;
 	var id = makeid();
 	
-	//alert("Email: " + email + " Password: " + password + " ID: " + id);
+	var JSONObject={
+	"email": email,
+	"password": password,
+	"id": id;
+	}
+	
 	}
 	else alert("Error!");
 }
