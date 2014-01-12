@@ -3,7 +3,7 @@ var Express = require('express');
 var HTTP = require('http');
 var Mongoose = require('mongoose');
 var Path = require('path');
-
+var Util = require('util')
 var ccUser = require('../lib/control/user');
 var ccView = require('../lib/control/view');
 
@@ -35,10 +35,10 @@ app.use(Express['static'](Path.resolve(__dirname, '../static')))
 ccUser.create(app);
 ccView.create(app);
 
-Mongoose.connect("mongodb://127.0.0.1/hackapp");
+Mongoose.connect("mongodb://admin:5678b9@dharma.mongohq.com:10042/goddard");
 Mongoose.connection.once('open', function() {
 	console.log("Connected to MongoDB");
-	server.listen(9001, function() {
-		console.log("Listening on port 9001");
+	server.listen(process.env.PORT, function() {
+		console.log("Listening on port " + process.env.PORT);
 	});
 });
