@@ -1,0 +1,57 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
+<script>
+    var count=300;
+    
+    var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+    
+    function timer()
+    {
+      count=count-1;
+      if (count <= 0)
+      {
+         clearInterval(counter);
+         //counter ended, do something here
+         return;
+      }
+    
+      //Do code for showing the number of seconds here
+      document.getElementById("timer").innerHTML=count + " secs"; // watch for spelling
+    }
+</script>
+</head>
+
+<body id="body" class="body">
+
+    <% if(session.user) { -%>
+    <div>Logged in as <%= session.user.name %>&nbsp;<a href="/logout">Logout</a></div>
+    <% } -%>
+    <br/>
+    <div id="wrapper" class="wrapper">
+        <div id="title" class="title">
+            <h1>Command Goddard!</h3>
+        </div>
+    </body>
+        <div id="cmdBox" class="cmdBox">
+            <h2>Voice</h2>
+                <center>
+                    <div id="iconBtn" class="iconBtn" onclick="location.href='/voice'"><img src="Microphone-icon.png" id="micIcon" class="icon"/></div>
+                </center>
+            <h2>Text</h2>
+                <center>
+                    <div id="iconBtn" class="iconBtn"><img src="Typewriter.png" id="typeIcon" class="icon"/></div>
+                </center>    
+        </div>
+        <div id="queue" class="queue">
+            <h2>Time Remaining</h2>
+            <br/>
+            <center><span id="timer" class="timer"></span></center>
+            <h2>Queue</h2>
+                <div id="user0" class="user">user0</div>
+                <div id="user1" class="user">user1</div>
+                <div id="user2" class="user">user2</div>
+                <div id="user3" class="user">user3</div>
+        </div>
+    </div>
+</html>

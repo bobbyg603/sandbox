@@ -1,12 +1,33 @@
 .login{
-position:fixed;
-left:50%;
-margin-left:-250px;
-top:50%;
-margin-top:-150px;
-height:300px;
-width:500px;
-border:1px solid black;
+    position:fixed;
+    left:50%;
+    margin-left:-250px;
+    top:50%;
+    margin-top:-150px;
+    height:318px;
+    width:600px;
+    border:1px solid black;
+    background-image:url("Goddard_cropped.png");
+    background-position:left top;
+    background-repeat:no-repeat;
+    background-color:white;
+}
+
+.body{
+    /*background-image:url('http://www.lewallpaper.com/imagebank/jimmy-neutron-boy-genius.jpg');*/
+    color:black;
+    z-index:0;
+}
+
+.wrapper{
+    background-color:white;
+    z-index:1;
+    height:117%;
+    width:auto;
+}
+
+h2{
+   margin-left:9px; 
 }
 
 td{
@@ -15,42 +36,62 @@ td{
 	border:1px solid black;
 }
 
-.date{
-	position:relative;
-	top:-25px;
+.noBorder{
+   border-collapse:collapse;
+} 
+
+.noBorder td{
+   height:16px;
+   border:none;
+   outline:none;
 }
 
-.monthContainer{
-	border:3px solid black;
-	width:600px;
-	padding-bottom:20px;
-	padding-top:20px;
+.title{
+    width:100%;
+    float:left;
+    height:10%;
+    z-index:2;
 }
 
-.monthTitle{
-	padding-bottom:20px;
-	font-size:36px;
-	font-style:bold;
+.cmdBox{
+    width:60%;
+    float:left;
+    height:75%;
+    z-index:2;
 }
 
-.weekContainer{
-	border:3px solid black;
-	width:600px;
-	padding-bottom:20px;
-	padding-top:20px;
+.queue{
+    width:40%;
+    float:left;
+    height:75%;
+    z-index:2;
 }
 
-.weekTitle{
-	padding-bottom:20px;
-	font-size:36px;
-	font-style:bold;
+.icon{
+    height:100%;
+    width:auto;
 }
 
-.UpcomingContainer{
-		position:fixed;
-		left:700px;
-		width:600px;
-		height:725px;
-		top:10px;
-		border:3px solid black;
+.iconBtn{
+    width:99%;
+    height:41%;
+    border:1px solid black;
+    background-color:white;
 }
+
+.iconBtn:hover{
+    background-color:black;
+}
+
+.user
+{
+    width:90%;
+    height:15%;
+    border:1px solid black;
+    margin:auto;
+}
+
+.timer{
+    font-size: 250%;
+}
+

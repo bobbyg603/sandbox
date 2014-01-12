@@ -30,7 +30,7 @@ app.use(Express.methodOverride('method'));
 app.use(Express.cookieParser("afa8s7dfoasdfm"));
 app.use(Express.cookieSession());
 app.use(app.router);
-app.use(Express['static'](Path.resolve(__dirname, '../static')))
+app.use(Express['static'](Path.resolve(__dirname, '../static')));
 
 ccUser.create(app);
 ccView.create(app);

@@ -1,9 +1,10 @@
 <html>
 <head>
         <title>
-        MyTyme - Login
+        Goddard - Login
         </title>
         <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    
 </head>
 <body>
 	<div id="login" class="login">
@@ -11,14 +12,30 @@
 		<br/><br/>
 		<h1>Login</h1>
 			<form method="post" action="/login">
-			Email: &nbsp &nbsp &nbsp <input type="text" name="name"><br/>
-			Password: <input type="password" name="password"><br/>
-			<br/>
+			<table class="noBorder">
+			    <tr>
+			        <td>
+			            <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:</b>
+			        </td>
+			        <td>
+			            <input type="text" name="name"/>
+			        </td>
+			    </tr>
+			    <tr>
+			        <td>
+			            <b>&nbsp;Password:</b>
+			        </td>
+			        <td>
+			            <input type="password" name="password"/>
+			        </td>
+			    </tr>
+			</table>
 			<input type="submit" value="Submit">
 			</form> 
-			<br/><br/>
+			<br/><br/><br/>
 			Not a member? Create an account <a href="/signup">here</a>.
 		</center>
 	</div>
+
 </body>
 </html>

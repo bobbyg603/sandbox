@@ -3,19 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <title>MyTyme - Sign Up</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
 </head>
 <div id="login" class="login">
 	<center>
 		<br />
 		<br />
-		<h2>Enter the Following:</h2>
+		<h1>Sign Up</h1>
 		<form name="input" method="post" action="/user">
-			Email: &nbsp; &nbsp; &nbsp;
-			<input type="text" name="name">
-			<br /> Password:
-			<input id="password" type="password" name="password">
-			<br /> <br />
-			<input type="submit" value="Submit">
+		    <table class="noBorder">
+		    <tr>
+		        <td>
+		            <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:</b>
+		        </td>
+		        <td>
+		            <input type="text" name="name">
+		        </td>
+		    </tr>
+			<tr>
+			    <td>
+			        <b>&nbsp;Password:</b>
+			    </td>
+			    <td>
+			        <input id="password" type="password" name="password">
+			    </td>
+			</tr>
+		    </table>
+		<input type="submit" value="Submit">
 		</form>
 	</center>
 </div>
